@@ -2,14 +2,11 @@
   int startY = -1;
   int segmentLengthMin = 10;
   int segmentLengthMax = 25;
-  int windowWidth = 1000;
-  int windowHeight = 1000;
+  int windowWidth = 500;
+  int windowHeight = 500;
   
-  public void settings() {
-    size(windowWidth, windowHeight);
-    smooth(2);
-  }
   public void setup() {
+    size(500, 500);
     strokeWeight(2);
     background(225);
   }
