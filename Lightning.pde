@@ -15,7 +15,6 @@
     while (startX < windowWidth && startX >= 0) {
       int endX = (int)((Math.random() * (segmentLengthMax - segmentLengthMin)) + segmentLengthMin) + startX;
       int endY = ((Math.random() > 0.4) ? (int)((Math.random() * (segmentLengthMax - segmentLengthMin)) + segmentLengthMin) + startY : (int)((Math.random() * (segmentLengthMax - segmentLengthMin)) + segmentLengthMin) * -1 + startY);
-      System.out.println(Math.ceil(Math.random() - 0.5));
       line(startX, startY, endX, endY);
       startX = endX;
       startY = endY;
