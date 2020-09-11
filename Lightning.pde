@@ -5,12 +5,12 @@
   int windowWidth = 500;
   int windowHeight = 500;
   
-  public void setup() {
+  void setup() {
     size(500, 500);
     strokeWeight(2);
     background(225);
   }
-  public void draw() {
+  void draw() {
     stroke((float)Math.random() * 225, (float)Math.random() * 225, (float)Math.random() * 225);
     while (startX < windowWidth && startX >= 0) {
       int endX = (int)((Math.random() * (segmentLengthMax - segmentLengthMin)) + segmentLengthMin) + startX;
@@ -22,7 +22,7 @@
     }
     startX = startY = -1;
   }
-  public void mousePressed() {
+  void mousePressed() {
     if (startX < 0 || startY < 0) {
       startX = 0;
       startY = Math.min(mouseY, mouseY-75);
